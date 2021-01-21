@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Regla de 3, calculo de cuantos segundos hay en 1 Hora.</title>
+</head>
+<body>
+	<h1>Calculo de cuantos segundos hay en las horas ingresadas:</h1>
+	<script>
+		var usuario = prompt("Ingrese las cantidades de horas");
+		var hora = parseFloat(usuario);
+		var segundos = 3600;
+		var segundosf;
+		var segundosf = hora * segundos / 1;
+		document.write("En " + hora + " Horas hay " + segundosf + " Segundos.");
+	</script>
+	<p>La cantidad de horas ingresadas fue:</p>
+	<script>
+		document.write(hora + " Horas.");
+	</script>
+</body>
+</html>
