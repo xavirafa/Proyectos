@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+body{
+	background: url("../img/fondo.jpg");
+}
+
+#contenedor{
+	width: 80%;
+	height: 660px;
+	background: white;
+	margin: 0 auto;
+}
+
+h1{
+	height: 100px;
+	text-indent: -9999px;
+	background: url("../img/logo.jpg") no-repeat;
+}
+
+ul{
+	list-style-type: none;
+	overflow: hidden;
+	background: blue;
+}
+
+li{
+	float: left;
+}
+
+li a.link-menu{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px 40px 20px 40px;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+	li a.link-menu:hover{
+		background-color: #df2e96;
+		border-radius: 20px 0 20px 0;
+	}
+
+.mi-video{
+	width: 100%;
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+	background: #df2e96;
+	color: white;
+	margin-top: -4px;
+}
+
+#autor{
+	text-emphasis: none;
+	color: white;
+	font-style: italic;
+}
