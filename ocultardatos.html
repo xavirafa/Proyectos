@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style type="text/css">
+		#premio, #triste{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Felicitaciones acabas de ganar un premio:</h1>
+	<button type="button" onclick="mostrarpremio();">Ver Premio</button>
+
+	<div id="premio">
+		<p>Te Ganaste un Pasaje a Cusco.</p>
+		<a href="javascript:void(0);" onclick="ocultarPremio();">No me gusta, no lo quiero!
+	</div>
+
+	<div id="triste">
+		<h3>:(</h3>
+	</div>
+
+	<script type="text/javascript">
+		function mostrarpremio(){
+			document.getElementById("premio").style.display = "block";
+			document.getElementById("triste").style.display = "none";
+		}
+
+		function ocultarPremio(){
+			document.getElementById("premio").style.display = "none";
+			document.getElementById("triste").style.display = "block";
+		}
+
+	</script>
+</body>
+</html>
