@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculo de Nomina Basico</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+		<form id="miformulario" name="">
+		<h2>INGRESA TODOS LOS DATOS SOLICITADOS</h2>
+		<a href="https://docs.google.com/spreadsheets/d/1tkSgboSiMwhG6hs_Hxsm0HUDR0Axbt2bU99EwKSLDfY/edit#gi" target="_blank">REPORTE DE TIEMPO DIARIO</a>
+		<br>
+		<br>
+		<h2>INGRESA TODOS LOS DATOS SOLICITADOS</h2>
+		<br>
+		<label>Ingrese sus Nombres y Apellidos: </label>
+		<input type="text" name="" id="nombre" autofocus="" placeholder="Nombres y Apellidos">
+
+		<br>
+		<br>
+
+		<label>Ingrese su salario minimo Mensual: </label>
+		<input type="number" name="" id="salario" placeholder="Escriba su sueldo basico">
+
+		<br>
+		<br>
+
+		<label>Ingrese las Horas Extras Diurnas Trabajadas: </label>
+		<input type="number" name="" id="hed" placeholder="Escriba su sueldo basico">
+
+		<br>
+		<br>
+
+		<label>Ingrese las Horas Extras Nocturnas Trabajadas: </label>
+		<input type="number" name="" id="hen" placeholder="Escriba su sueldo basico">
+
+		<br>
+		<br>
+
+		<label>Ingrese las Horas extras Diurnas dominical/festivos Trabajadas: </label>
+		<input type="number" name="" id="heddf" placeholder="Escriba su sueldo basico">
+
+		<br>
+		<br>
+
+		<label>Ingrese las Horas extras Nocturnas dominical/festivos Trabajadas: </label>
+		<input type="number" name="" id="hendf" placeholder="Escriba su sueldo basico">
+
+		<br>
+		<br>
+		<button onclick="limpiar();">Limpiar Campos</button>
+
+		<br>
+		<br>
+		<button type="button" onclick="calcular();">Calcular</button>
+		
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<h2>DATOS BASICOS PARA TENER EN CUENTA EN BASE A TU SUELDO MINIMO:</h2>
+		<p>Tu sueldo Basico Mensual es (48 Horas semanales, 8 Horas Diarias): <br> <span id="basicom"></span></p>
+		<p>Tu Quincena Basica es: <br> <span id="basicoq"></span></p>
+		<p>Valor de Hora Ordinaria: <br> <span id="ho"></span></p>
+		<p>Valor de Horas Extras Diurnas, (6 am a 10 pm): <br> <span id="hediurna"></span></p>
+		<p>Valor de Horas Extras Nocturnas, (10 pm a 6 am): <br> <span id="henocturna"></span></p>
+		<p>Valor de Horas Extras Diurnas Dominicales y Festivas, (6 am a 10 pm): <br> <span id="hddf"></span></p>
+		<p>Valor de Horas Extras Nocturnas Dominicales y Festivos, (10 pm a 6 am): <br> <span id="hndf"></span></p>
+		<p>Valor de Subsidio de Transporte Mensual: <br> <span id="stm"></span></p>
+		<p>Valor de Subsidio de Transporte Quincenal: <br> <span id="stq"></span></p>
+		<a href="https://www.rankia.co/blog/mejores-opiniones-colombia/4185148-cuanto-vale-dia-hora-trabajo-colombia-2021" target="_blank">En este Enlace podras leer Mayor informacion hacerca del Sueldo minimo, y como calcularlo.</a>. <br>
+		
+		<br>
+		<br>
+		<h2>CALCULO APROXIMADO DE NOMINA QUINCENAL.</h2>
+		<p>Nombres y Apellidos: <br> <span id="nombres"></span></p>
+		<br>
+		<h3>DEVENGADO</h3>
+		<p>Tu Quincena Basica es: <br> <span id="basicoq2"></span></p>
+		<p>Auxilio de Transporte: <br> <span id="stq2"></span></p>
+		<p>Horas Extras Diurnas: <br> <span id="hed2"></span></p>
+		<p>Horas Extras Nocturnas: <br> <span id="hen2"></span></p>
+		<p>Horas Extras Diurnas dominical/festivos: <br> <span id="hddf2"></span></p>
+		<p>Horas Extras Nocturnas dominical/festivos: <br> <span id="hendf2"></span></p>
+
+
+		<br>
+		<h3>DEDUCIDO</h3>
+		<p>Deduccion Salud: <br> <span id="ds"></span></p>
+		<p>Deduccion Pension: <br> <span id="dp"></span></p>
+
+		<br>
+		<h1>NETO A PAGAR:</h1>
+		<h2><span id="np"></span></h2>
+	</form>
+	<script src="js/js.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
