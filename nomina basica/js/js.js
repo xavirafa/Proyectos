@@ -15,7 +15,7 @@ function calcular(){
 	var e = ((z*0.75)+z);
 	var g = ((z*1)+z);
 	var i = ((z*1.5)+z);
-	var j = (c - 59546) + ((a*b) + (d*e) + (f*g) + (i*h));
+	var j = c + (a*b) + (d*e) + (f*g) + (i*h) + 53227 - 59546;
 	var k = 53227;
 	var l = 106454;
 	var m = 29773;
@@ -38,4 +38,5 @@ function calcular(){
 	document.getElementById("hddf2").innerHTML = f*g + " Pesos";
 	document.getElementById("hendf2").innerHTML = i*h + " Pesos";
 	document.getElementById("np").innerHTML = j + " Pesos";
+	document.getElementById("stq2").innerHTML = k + " Pesos";
 }
