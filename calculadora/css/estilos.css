@@ -1,0 +1,32 @@
+ input {
+     width: 200px;
+     padding: 5px;
+     border-radius: 5px;
+     background-color: #F3E6E2;
+     border: 0;
+     border: 0;
+   }
+
+button {
+     padding: 5px;
+     border-radius: 5px;
+     background-color: #eee;
+   }
+
+.result {
+	width: 50px;
+}
+
+body{
+	background: url("../img/fondo2.png") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#miformulario{
+	width: 30%;
+	height: 300px;
+	background: white;
+	margin: 0 auto;

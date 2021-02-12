@@ -4,19 +4,20 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Calculadora Basica</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" href="img/icono.png">
 </head>
 <body>
 	<form id="miformulario" name="">
+		<h1>CALCULADORA BASICA</h1>
 		<label>Numero 1: </label>
-		<input type="number" name="" id="valor1" autofocus="" placeholder="Escribe un Numero">
-		<button onclick="limpiar();">Limpiar Campos</button>
+		<input type="number" name="" id="valor1" autofocus="" placeholder="Ingrese el Primer Numero">
 
 		<br>
 		<br>
 
 		<label>Numero 2: </label>
-		<input type="number" name="" id="valor2" placeholder="Escribe otro numero aqui">
+		<input type="number" name="" id="valor2" placeholder="Ingrese el Segundo Numero">
 
 		<br>
 		<br>
@@ -25,8 +26,15 @@
 		<button type="button" onclick="restar();">Restar</button>
 		<button type="button" onclick="multiplicar();">Multiplicar</button>
 		<button type="button" onclick="dividir();">Dividir</button>
+		
+		<br>
+		<br>
+		<button onclick="limpiar();">Limpiar Campos</button>
+		<br>
+		<br>
 
-		<p>El Resultado es: <span id="resultado"></span></p>
+		<label>El Resultado es: </label>
+		<input type="text" class="result" id="resultado"></input>
 
 	</form>
 	<script src="js/js.js" type="text/javascript" charset="utf-8" async defer></script>
