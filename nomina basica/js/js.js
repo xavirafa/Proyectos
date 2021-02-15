@@ -9,6 +9,7 @@ function calcular(){
 	var d = parseInt(document.getElementById("hen").value);
 	var f = parseInt(document.getElementById("heddf").value);
 	var h = parseInt(document.getElementById("hendf").value);
+	var o = parseInt(document.getElementById("heotq").value);
 	var z = (y/30)/8 ;
 	var b = ((z*0.25)+z);
 	var c = y/2;
@@ -20,11 +21,12 @@ function calcular(){
 	var l = 106454;
 	var m = 29773;
 	var n = 29773;
+	var p = (o*y)/192;
 	document.getElementById("tq").value = " 53227 Pesos";
 	document.getElementById("nombres").value = x;
 	document.getElementById("basicom").value = y + " Pesos";
 	document.getElementById("basicoq").value = c + " Pesos";
-	document.getElementById("basicoq2").value = c + " Pesos";
+	document.getElementById("basicoq2").value = p + " Pesos por " + o + " Horas Trabajadas";
 	document.getElementById("ho").value = z + " Pesos";
 	document.getElementById("hediurna").value = b + " Pesos";
 	document.getElementById("henocturna").value = e + " Pesos";

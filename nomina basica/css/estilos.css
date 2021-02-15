@@ -3,7 +3,7 @@ html{
 }
 
 input {
-     width: 250px;
+     width: 285px;
      padding: 5px;
      border-radius: 5px;
      background-color: #F3E6E2;
@@ -18,7 +18,7 @@ button {
    }
 
  body{
-	background: url("../img/fondo4.png") no-repeat center fixed;
+	background: url("../img/1.jpg") no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
