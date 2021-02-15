@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculo de Nomina Basico</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" href="img/icono.png">
+</head>
+<body>
+		<font color="black" face="Comic Sans MS">
+		<form id="miformulario" name="">
+		<h1>CALCULO APROXIMADO DE COBRO QUINCENAL</h1>
+		<a href="https://docs.google.com/spreadsheets/d/1tkSgboSiMwhG6hs_Hxsm0HUDR0Axbt2bU99EwKSLDfY/edit#gi" target="_blank">REPORTE DE TIEMPO DIARIO</a>
+		<br>
+		<br>
+		<h2>INGRESA TODOS LOS DATOS SOLICITADOS</h2>
+		<br>
+		<label>Ingrese sus Nombres y Apellidos: </label>
+		<input type="text" name="" id="nombre" autofocus="" placeholder="Nombres y Apellidos">
+
+		<br>
+		<br>
+
+		<label>Ingrese su Salario Minimo Mensual: </label>
+		<input type="number" name="" id="salario" placeholder="Escriba su Sueldo Basico">
+
+		<br>
+		<br>
+
+		<label>Ingrese Las Horas Ordinarias Trabajadas en la Quincena: </label>
+		<input type="number" name="" id="heotq" placeholder="Lo establecido son 96 horas Quincenales">
+
+		<br>
+		<br>
+
+		<label>Ingrese las Horas Extras Diurnas Trabajadas: </label>
+		<input type="number" name="" id="hed" placeholder="Ingrese las Horas o Coloque un 0">
+
+		<br>
+		<br>
+
+		<label>Ingrese las Horas Extras Nocturnas Trabajadas: </label>
+		<input type="number" name="" id="hen" placeholder="Ingrese las Horas o Coloque un 0">
+
+		<br>
+		<br>
+
+		<label>Ingrese las Horas Extras Diurnas Dominical/Festivos Trabajadas: </label>
+		<input type="number" name="" id="heddf" placeholder="Ingrese las Horas o Coloque un 0">
+
+		<br>
+		<br>
+
+		<label>Ingrese las Horas Extras Nocturnas Dominical/Festivos Trabajadas: </label>
+		<input type="number" name="" id="hendf" placeholder="Ingrese las Horas o Coloque un 0">
+
+		<br>
+		<br>
+		<button onclick="limpiar();">Limpiar Campos</button>
+
+		<br>
+		<br>
+		<button type="button" onclick="calcular();">Calcular</button>
+		
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<h2>DATOS BASICOS PARA TENER EN CUENTA EN BASE A TU SUELDO MINIMO:</h2>
+		<p>Tu sueldo Basico Mensual es (8 Horas Diarias, 192 Horas Mnesuales):
+		<input type="text" name="" id="basicom" autofocus="" placeholder="Aqui Aparecera el Resultado"></p>
+		<p>Tu Quincena Basica es (8 Horas Diarias, 96 Horas Quinceanles):
+		<input type="text" name="" id="basicoq" autofocus="" placeholder="Aqui Aparecera el Resultado"></p>
+		<p>Valor de Hora Ordinaria:
+		<input type="text" name="" id="ho" autofocus="" placeholder="Aqui Aparecera el Resultado"></p>
+		<p>Valor de Horas Extras Diurnas, (6 am a 10 pm):
+		<input type="text" name="" id="hediurna" autofocus="" placeholder="Aqui Aparecera el Resultado"></p>
+		<p>Valor de Horas Extras Nocturnas, (10 pm a 6 am): 
+		<input type="text" name="" id="henocturna" autofocus="" placeholder="Aqui Aparecera el Resultado"></p>
+		<p>Valor de Horas Extras Diurnas Dominicales y Festivas, (6 am a 10 pm):
+		<input type="text" name="" id="hddf" autofocus="" placeholder="Aqui Aparecera el Resultado"></p>
+		<p>Valor de Horas Extras Nocturnas Dominicales y Festivos, (10 pm a 6 am):
+		<input type="text" name="" id="hndf" autofocus="" placeholder="Aqui Aparecera el Resultado"></p>
+		<p>Valor de Subsidio de Transporte Mensual:
+		<input type="text" name="" id="stm" autofocus="" placeholder="Aqui Aparecera el Resultado"></p>
+		<p>Valor de Subsidio de Transporte Quincenal:
+		<input type="text" name="" id="stq" autofocus="" placeholder="Aqui Aparecera el Resultado"></p>
+		<a href="https://www.rankia.co/blog/mejores-opiniones-colombia/4185148-cuanto-vale-dia-hora-trabajo-colombia-2021" target="_blank">En este Enlace podras leer Mayor informacion hacerca del Sueldo minimo, y como calcularlo.</a>. <br>
+		
+		<br>
+		<br>
+		<h2>CALCULO APROXIMADO DE NOMINA QUINCENAL.</h2>
+		<p>Nombres y Apellidos:
+		<input type="text" name="" id="nombres" autofocus="" placeholder=""></p>
+		<br>
+		<h3>DEVENGADO:</h3>
+		<p>Tu Quincena Basica es:
+		<input type="text" name="" id="basicoq2" autofocus="" placeholder=""></p>
+		<p>Auxilio de Transporte:
+		<input type="text" name="" id="tq" autofocus="" placeholder=""></p>
+		<p>Horas Extras Diurnas:
+		<input type="text" name="" id="hed2" autofocus="" placeholder=""></p>
+		<p>Horas Extras Nocturnas: 
+		<input type="text" name="" id="hen2" autofocus="" placeholder=""></p>
+		<p>Horas Extras Diurnas dominical/festivos:
+		<input type="text" name="" id="hddf2" autofocus="" placeholder=""></p>
+		<p>Horas Extras Nocturnas dominical/festivos:
+		<input type="text" name="" id="hendf2" autofocus="" placeholder=""></p>
+
+
+		<br>
+		<h3>DEDUCIDO:</h3>
+		<p>Deduccion Salud:
+		<input type="text" name="" id="ds" autofocus="" placeholder=""></p>
+		<p>Deduccion Pension:
+		<input type="text" name="" id="dp" autofocus="" placeholder=""></p>
+
+		<br>
+		<h1>NETO A COBRAR:</h1>
+		<input type="text" name="" id="np" autofocus="" placeholder=""></p>
+
+		<br>
+		<br>
+		<footer>
+		<div class="main"></div>
+		<footer class="footer-distributed">
+ 
+		<div class="footer-left">
+ 
+		<h3>Xavier R.<span> Rojas R.</span></h3>
+ 
+		<p class="footer-links">
+		<a href="#">Contact</a>
+		</p>
+ 
+		<p class="footer-company-name">CopyRight &copy; 2021</p>
+		</div>
+ 
+		<div class="footer-center">
+ 
+		<div>
+		<i class="fa fa-map-marker"></i>
+		<p><span>Vereda La Playa, Finca 266</span> Antioquia, Colombia</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>+57 3202882534</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="mailto:support@company.com">xavierrojas16@gmail.com</a></p>
+		</div>
+ 
+		</div>
+ 
+		<div class="footer-right">
+ 
+		<p class="footer-company-about">
+		<span>SERVICIOS</span>
+	Soporte Tecnico en Software y Hardware en Computadores de Escritorio, Portatiles, Impresoras, Camaras de vigilancia, Diseño de Paginas Webs, redes Alambricas e Inalambricas. 
+		</p> 
+		</div>
+ 
+		</div>
+		</footer>
+	</form>
+	<script src="js/js.js" type="text/javascript" charset="utf-8" async defer></script>
+
+</body>
+</html>
