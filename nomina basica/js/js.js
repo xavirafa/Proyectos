@@ -10,19 +10,21 @@ function calcular(){
 	var f = parseInt(document.getElementById("heddf").value);
 	var h = parseInt(document.getElementById("hendf").value);
 	var o = parseInt(document.getElementById("heotq").value);
+	var q = parseInt(document.getElementById("dtq").value);
 	var z = (y/30)/8 ;
 	var b = ((z*0.25)+z);
 	var c = y/2;
 	var e = ((z*0.75)+z);
 	var g = ((z*1)+z);
 	var i = ((z*1.5)+z);
-	var j = c + (a*b) + (d*e) + (f*g) + (i*h) + 53227 - 59546;
-	var k = 53227;
 	var l = 106454;
+	var r = (q * (l/30));
+	var j = c + r + (a*b) + (d*e) + (f*g) + (i*h) - 59546;
+	var k = 53227;
 	var m = 29773;
 	var n = 29773;
 	var p = (o*y)/192;
-	document.getElementById("tq").value = " 53227 Pesos";
+	document.getElementById("tq").value = r + " Pesos";
 	document.getElementById("nombres").value = x;
 	document.getElementById("basicom").value = y + " Pesos";
 	document.getElementById("basicoq").value = c + " Pesos";
@@ -41,4 +43,5 @@ function calcular(){
 	document.getElementById("hddf2").value = f*g + " Pesos";
 	document.getElementById("hendf2").value = i*h + " Pesos";
 	document.getElementById("np").value = j + " Pesos";
+	document.getElementById("std").value = l/30 + " Pesos";
 }
