@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculadora Consumo de RIGS</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" href="img/icono.png">
+</head>
+<body>
+	<form id="miformulario" name="">
+		<h1>CALCULADORA BASICA DE CONSUMO DE LOS RIGS</h1>
+		<label><b>Ingrese el Consumo en Watts: </label>
+		<input type="number" name="" id="watts" autofocus="">
+
+		<br>
+		<br>
+
+		<label>Ingrese Las Horas de Trabajo al Dia: </label>
+		<input type="number" name="" id="horas">
+
+		<br>
+		<br>
+
+		<label>Ingrese El Valor del Kw/H: </label>
+		<input type="number" name="" id="precio">
+
+		<br>
+		<br>
+
+		<button type="button" onclick="calcular();">Calcular</button>
+		<br>
+		<br>
+		<button onclick="limpiar();">Limpiar Campos</button>
+		<br>
+		<br>
+
+		<label>El Valor Aproximado a Pagar en COP al mes es de: </label>
+		<input type="text" class="result" id="resultado"></input>
+
+	</form>
+	<script src="js/js.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
