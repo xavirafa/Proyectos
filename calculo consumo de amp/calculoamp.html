@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculo de Consumo de Amperios</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" href="img/icono.png">
+</head>
+<body>
+	<form id="miformulario" name="">
+		<h1>CALCULADORA BASICA DE CONSUMO DE AMPERIOS</h1>
+		<label><b>Ingrese el Consumo en Watts: </label>
+		<input type="number" name="" id="p" autofocus="">
+
+		<br>
+		<br>
+
+		<label>Ingrese el Voltaje con el que trabajan los equipos: </label>
+		<input type="number" name="" id="v">
+
+		<br>
+		<br>
+
+		<button type="button" onclick="calcular();">Calcular</button>
+		<br>
+		<br>
+		<button onclick="limpiar();">Limpiar Campos</button>
+		<br>
+		<br>
+
+		<label>El consumo en Amperios del equipo es de: </label>
+		<input type="text" class="result" id="resultado"></input>
+
+	</form>
+	<script src="js/js.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
